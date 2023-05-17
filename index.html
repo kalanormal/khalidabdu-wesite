@@ -1,0 +1,85 @@
+<! DOCTYPE HTML>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>personal info</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+	<div class="container">
+	<nav>
+	<img src="F://MY NEW PROJECT/picture/khalid.jpg" alt="khalid.jpg" width="260" height="125">
+	<ul> 
+	<li><a href="#">home</a></li>
+	<li><a href="#">about</a></li>
+	<li><a href="#">portfolio</a></li>
+	<li><a href="#">service</a></li>
+	<li><a href="#">contact</a></li>
+	</ul>
+	</nav>
+	<div class="header-text">
+	      <p>Bussiness Designer</p>
+		  <h1>Hi, I'm <span>Khalid</span> Abdu<br> From Ethiopia</h1>
+	</div>
+	</div>
+	<!-----------about----------->
+	<div id="about">
+	  <div class="container">
+	    <div class="raw">
+		<div class="about-col-1">
+		<img src="F://MY NEW PROJECT/picture/khalid.jpg">
+		</div>
+		<div class="about-col-2">
+		  <h1 class="sub-title">ABOUT ME</h1>
+		  <p>He initially headed campaigns against Muhammad on behalf of the Quraysh. He later became a Muslim and spent the remainder of his career in service to Muhammad and the first two Rashidun caliphs: Abu Bakr and Umar. Khalid played the leading command roles in the Ridda Wars against rebel tribes in Arabia in 632–633, the initial campaigns in Sasanian Iraq in 633–634, and the conquest of Byzantine Syria in 634–638.</p>
+		   <div class="tab-title">
+		      <p  class="tab-links active-link" oneclick="opentab('skills')">Skills</p>
+		      <p  class="tab-links" oneclick="opentab('Expiriance')">Expiriance</p>
+		      <p  class="tab-links" oneclick="opentab('Education')">Education</p>
+		   </div>
+		     <div class="tab-contents active-tab" id="skills" >
+			    <ul>
+				 <li><span>Bussiness/Knowledge</span><br>Program authorating/Delivery agent</li>
+				 <li><span>program authorating</span><br>Making youtube programs</li>
+				 <li><span>Delivery agent</span><br>Delivering Needs</li>
+				</ul>
+			 </div>
+			 <div class="tab-contents" id="Expiriance">
+			    <ul>
+				 <li><span>2023-currunt</span><br>Program authorating/Delivery Agent In ETHIOPIA</li>
+				 <li><span>2020-2021</span><br>Learning How To Code</li>
+				 <li><span>2018-2019</span><br>youtube program autorizing</li>
+				 <li><span>2017-2018</span><br>Learning Acadamy</li>
+				</ul>
+				</ul>
+			 </di>
+			 <div class="tab-contents" id="Education" >
+			    <ul>
+				 <li><span>2017</span><br>Learning Acadamy</li>
+				 <li><span>2016</span><br>Creativity Compitision</li>
+				 <li><span>2015</span><br>Inventing New Idea</li>
+				</ul>
+				</ul>
+			 </div>
+		</div>
+		</div>
+	  </div>
+	</div>
+	<script>
+	var tablinks = document.getElementsByclassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+	    function opentab(tabname){
+		for(tablink of tablinks){
+		    tablink.classList.remove("active-link");
+		}for(tabcontent of tabcontents){
+		    tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classlist.add("active-link");
+		document.getelementbyid(tabname).classlist.add("active-tab");
+		}
+	</script>
+	
+</body>
+</html>
